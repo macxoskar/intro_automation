@@ -1,0 +1,166 @@
+{
+  "id": "64222324-3e5a-4f31-b0fd-9372b3605ced",
+  "version": "2.0",
+  "name": "Login Pagina",
+  "url": "https://evening-bastion-49392.herokuapp.com",
+  "tests": [{
+    "id": "57423332-b2d5-4a01-899b-91d5b51a6c41",
+    "name": "Untitled",
+    "commands": [{
+      "id": "81d8017c-7a01-4b7c-af00-140326fcb62e",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "67daa79b-5f5a-457a-8ee5-f6227b57bfac",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "css=h1",
+      "targets": [
+        ["css=h1", "css:finder"],
+        ["xpath=//h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'Songs By Sinatra')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "624569ae-b27a-4a40-a11b-d856afdff889",
+      "comment": "",
+      "command": "verifyText",
+      "target": "linkText=log in",
+      "targets": [
+        ["linkText=log in", "linkText"],
+        ["css=footer > a", "css:finder"],
+        ["xpath=//a[contains(text(),'log in')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/login')]", "xpath:href"],
+        ["xpath=//footer/a", "xpath:position"],
+        ["xpath=//a[contains(.,'log in')]", "xpath:innerText"]
+      ],
+      "value": "log in"
+    }, {
+      "id": "40327d99-349f-4df7-8cdd-739869afa87d",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=log in",
+      "targets": [
+        ["linkText=log in", "linkText"],
+        ["css=footer > a", "css:finder"],
+        ["xpath=//a[contains(text(),'log in')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/login')]", "xpath:href"],
+        ["xpath=//footer/a", "xpath:position"],
+        ["xpath=//a[contains(.,'log in')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "712fe0f3-2c0a-4173-b9cc-9594e3a5f4fc",
+      "comment": "",
+      "command": "click",
+      "target": "id=username",
+      "targets": [
+        ["id=username", "id"],
+        ["name=username", "name"],
+        ["css=#username", "css:finder"],
+        ["xpath=//input[@id='username']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "8ef43a5e-7837-43bc-a909-5c7a67997b98",
+      "comment": "",
+      "command": "type",
+      "target": "id=username",
+      "targets": [
+        ["id=username", "id"],
+        ["name=username", "name"],
+        ["css=#username", "css:finder"],
+        ["xpath=//input[@id='username']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "frank"
+    }, {
+      "id": "0167ce24-394a-4a39-89b8-386ce18470aa",
+      "comment": "",
+      "command": "click",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["name=password", "name"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b6343e33-d1b1-48e6-8818-f44670870a9f",
+      "comment": "",
+      "command": "type",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["name=password", "name"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": "sinatra"
+    }, {
+      "id": "ae153c0d-b720-4798-992e-1fef06d6dd5a",
+      "comment": "",
+      "command": "click",
+      "target": "css=input:nth-child(5)",
+      "targets": [
+        ["css=input:nth-child(5)", "css:finder"],
+        ["xpath=//input[@value='Log In']", "xpath:attributes"],
+        ["xpath=//input[3]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "950806f6-7f27-45bd-9715-caaf2ba5b3cc",
+      "comment": "",
+      "command": "click",
+      "target": "css=.flash",
+      "targets": [
+        ["css=.flash", "css:finder"],
+        ["xpath=//div[@id='flash']/div", "xpath:idRelative"],
+        ["xpath=//div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "5e0fdeb7-247b-49d1-b432-9c262da87b61",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=.flash",
+      "targets": [
+        ["css=.flash", "css:finder"],
+        ["xpath=//div[@id='flash']/div", "xpath:idRelative"],
+        ["xpath=//section/div/div", "xpath:position"]
+      ],
+      "value": "You are now logged in as frank"
+    }, {
+      "id": "628415b9-2d4c-410a-b1ed-44f8ff30aba7",
+      "comment": "",
+      "command": "assertText",
+      "target": "linkText=log out",
+      "targets": [
+        ["linkText=log out", "linkText"],
+        ["css=footer > a", "css:finder"],
+        ["xpath=//a[contains(text(),'log out')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/logout')]", "xpath:href"],
+        ["xpath=//footer/a", "xpath:position"],
+        ["xpath=//a[contains(.,'log out')]", "xpath:innerText"]
+      ],
+      "value": "log out"
+    }]
+  }],
+  "suites": [{
+    "id": "3e54f4b1-0399-4ccc-b0d0-da5475a54d28",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["57423332-b2d5-4a01-899b-91d5b51a6c41"]
+  }],
+  "urls": ["https://evening-bastion-49392.herokuapp.com/"],
+  "plugins": []
+}

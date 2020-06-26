@@ -1,0 +1,176 @@
+{
+  "id": "305a08b7-b3a3-4bfb-9e0f-86d2de4fc9cb",
+  "version": "2.0",
+  "name": "navegar en pagina",
+  "url": "https://evening-bastion-49392.herokuapp.com",
+  "tests": [{
+    "id": "a24df785-2250-482f-bd89-3570f7829280",
+    "name": "Caso1",
+    "commands": [{
+      "id": "2e6c48c0-f7a0-4d2d-818e-46772dcc740d",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "85d3f95d-d782-4555-a034-2744700e16e8",
+      "comment": "Imagen Sinatra",
+      "command": "assertElementPresent",
+      "target": "css=img:nth-child(2)",
+      "targets": [],
+      "value": "30000"
+    }, {
+      "id": "951887bd-ab12-4cb4-8847-9ced4a409547",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=p",
+      "targets": [
+        ["css=p", "css:finder"],
+        ["xpath=//p", "xpath:position"],
+        ["xpath=//p[contains(.,'Welcome to this website all about the songs of the great Frank Sinatra')]", "xpath:innerText"]
+      ],
+      "value": "Welcome to this website all about the songs of the great Frank Sinatra"
+    }, {
+      "id": "2459ea5b-efc6-4b89-a80c-bcb9fcede2df",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=About",
+      "targets": [
+        ["linkText=About", "linkText"],
+        ["css=li:nth-child(2) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'About')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/about')]", "xpath:href"],
+        ["xpath=//li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'About')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "bcd05d5a-858a-40e8-b16c-5635ce9f7b79",
+      "comment": "",
+      "command": "assertText",
+      "target": "linkText=About",
+      "targets": [
+        ["linkText=About", "linkText"],
+        ["css=.current", "css:finder"],
+        ["xpath=//a[contains(text(),'About')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/about')]", "xpath:href"],
+        ["xpath=//li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'About')]", "xpath:innerText"]
+      ],
+      "value": "About"
+    }, {
+      "id": "7ba32b6f-e818-4cdd-8e1a-399222e99aab",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Contact",
+      "targets": [
+        ["linkText=Contact", "linkText"],
+        ["css=li:nth-child(3) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Contact')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/contact')]", "xpath:href"],
+        ["xpath=//li[3]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Contact')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "778138b7-9735-4540-a33d-a9e05bd7d2ca",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=p",
+      "targets": [
+        ["css=p", "css:finder"],
+        ["xpath=//p", "xpath:position"],
+        ["xpath=//p[contains(.,'You can contact me by filling in the form below:')]", "xpath:innerText"]
+      ],
+      "value": "You can contact me by filling in the form below:"
+    }, {
+      "id": "8dc738ff-aa49-4846-b711-2ea80b7c1c7c",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "css=input:nth-child(7)",
+      "targets": [
+        ["css=input:nth-child(7)", "css:finder"],
+        ["xpath=//input[@value='Send Message']", "xpath:attributes"],
+        ["xpath=//input[3]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "4cebafa5-11f9-4aad-aef9-c76688549509",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Songs",
+      "targets": [
+        ["linkText=Songs", "linkText"],
+        ["css=li:nth-child(4) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Songs')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/songs')]", "xpath:href"],
+        ["xpath=//li[4]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Songs')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "4d1a8b06-f70b-4428-b60a-66891579fb0c",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=section > h1",
+      "targets": [
+        ["css=section > h1", "css:finder"],
+        ["xpath=//section/h1", "xpath:position"]
+      ],
+      "value": "Songs"
+    }, {
+      "id": "cf2d4593-676c-4990-8a91-17cc93a1346d",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "linkText=(づ｡◕‿◕｡)づ",
+      "targets": [
+        ["linkText=(づ｡◕‿◕｡)づ", "linkText"],
+        ["css=li:nth-child(6) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'(づ｡◕‿◕｡)づ')]", "xpath:link"],
+        ["xpath=//ul[@id='songs']/li[6]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/songs/20')]", "xpath:href"],
+        ["xpath=//li[6]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'(づ｡◕‿◕｡)づ')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "7fb38a16-9c12-46a0-9cce-2b649bc55e59",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=(╯°□°）╯",
+      "targets": [
+        ["linkText=(╯°□°）╯", "linkText"],
+        ["css=#songs > li:nth-child(1) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'(╯°□°）╯')]", "xpath:link"],
+        ["xpath=//ul[@id='songs']/li/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/songs/3')]", "xpath:href"],
+        ["xpath=//section/ul/li/a", "xpath:position"],
+        ["xpath=//a[contains(.,'(╯°□°）╯')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "dd5c6bad-6792-4db6-aef1-4f214d95ba72",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "css=form:nth-child(2) > input",
+      "targets": [
+        ["css=form:nth-child(2) > input", "css:finder"],
+        ["xpath=//input[@value='Like']", "xpath:attributes"],
+        ["xpath=//div[@id='like']/form/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "c3049197-a9ff-4121-850f-151eaff2f88d",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["a24df785-2250-482f-bd89-3570f7829280"]
+  }],
+  "urls": ["https://evening-bastion-49392.herokuapp.com/"],
+  "plugins": []
+}
